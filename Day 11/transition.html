@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box {
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            
+            background-color: rgb(213, 44, 44);
+            /* transition: all 2s ; */
+
+            /* transition-property: height; */
+            transition-property: all;
+            transition-duration: 2s;
+            /* transition-delay: 2s; */
+            /* transition-timing-function: linear; */
+            transition-timing-function: cubic-bezier(1, -0.76, 0, 1.48);
+
+            box-shadow: 0px 0px 20px 16px red;
+            border-radius: 50%;
+        }
+        
+        .box:hover {
+            box-shadow: 0px 0px 20px 16px gray;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            cursor: pointer;
+            /* cursor: help;
+            cursor: progress; */
+            background-color: rgb(177, 171, 171);
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
